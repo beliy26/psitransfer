@@ -1,9 +1,10 @@
-FROM node:10-alpine
+FROM arm32v7/node
 
 ENV PSITRANSFER_UPLOAD_DIR=/data \
     NODE_ENV=production
-
-MAINTAINER Christoph Wiechert <wio@psitrax.de>
+    
+LABEL MAINTAINER="Christoph Wiechert <wio@psitrax.de>"
+LABEL despription="PsiTransfer for RassberyPi"
 
 WORKDIR /app
 
